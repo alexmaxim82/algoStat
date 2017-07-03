@@ -6,5 +6,4 @@
  * Time: 16:05
  */
 echo test2;
-
 ?>
