@@ -6,7 +6,7 @@
  * Time: 16:05
  */
 
-algoInsertion($array)
+function algoInsertion(&$array)
 {
     $i = 0;
     $size = count($array);
@@ -28,4 +28,33 @@ algoInsertion($array)
         $i++;
     }
 }
+
+function algoSelection(&$array)
+{
+    $i = 0;
+    $size = count($array);
+    while ($i < $size)
+    {
+        $iElem = $i;
+        $Elem = $array[$iElem];
+        $j = 0;
+        while ($j < $size)
+        {
+            if ($array[$j] < $Elem)
+            {
+                $iElem = $j;
+                $Elem = $array[$iElem];
+            }
+            $j++;
+        }
+        if ($iElem != $i)
+        {
+            $array[$iElem] = $array[$i];
+            $array[$i] = $Elem;
+        }
+        $i++;
+    }
+}
+
+algoBulle
 ?>
