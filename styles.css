@@ -1,0 +1,122 @@
+
+
+body {
+	/*background:#f0f0f0;*/
+	font: 14px/20px Arial,sans-serif;
+	color:#555;
+    padding-top: 50px;
+	margin:0;
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+.navbar
+{
+	background-color:#004d39;
+	opacity: 0.9;
+	padding:35 px 20px 20px 0;
+	}
+
+h2
+{
+	font-family: Jazz fantasy;
+	color: #004d39;
+	text-align: Center;
+	font-size: 380%;
+	line-height: 120%;
+	padding: 5% 0;
+}
+.container-fluid
+{
+margin-left: 3%;
+margin-right: 3%;
+}
+
+h6.subtitle
+{
+color:#999999;
+font-family: verdana;
+}
+
+.imgcharacters
+{
+ width: 100px;
+ height: 100px;
+ background-size: cover;
+ display: block;
+ border-radius: 100px;
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+
+}
+
+
+.col-md-4
+{
+
+	width: 33%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 7%;
+	padding-right: 7%;
+	/*border-bottom: 1px solid #a4a6aa;
+	border-top: 1px solid #a4a6aa; */
+	display: table-cell;
+
+
+}
+
+.col-md-3
+{
+
+	width: 33%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 7%;
+	padding-right: 7%; 
+	display: table-cell;
+
+
+}
+
+.first
+{
+	width: 50px;
+	height:50px;
+	filter: grayscale(1);
+	-web-kit: grayscale(1); 
+}
+
+
+.first:hover
+{
+	filter: grayscale(0);
+	-web-kit: grayscale(0); 
+}
+
+
+.ffirst{
+	color: #f0f0f0;
+	background: #004d39;
+	opacity: 0.9;
+}
+.flast{
+	background: #0077b3;
+	text-align:center;
+}
+
+#logo 
+{
+	margin:20px;
+	float:left;
+	width:200px;
+	height:75px;
+	background: url(17-accecite_charente_maritime1a.jpg) no-repeat center; 
+}
+.jumbotron
+{
+padding: 100px 100px 100px 100px;
+margin: 400px 500px 600px 500px;
+border: 1px solid black;	
+}
