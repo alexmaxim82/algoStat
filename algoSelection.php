@@ -8,14 +8,14 @@
 
 function algoSelection(&$array)
 {
+    $step = 0;
     $i = 0;
-    $size = count($array);
-    while ($i < $size)
+    while ($i < count($array) - 1)
     {
         $iElem = $i;
         $Elem = $array[$iElem];
-        $j = 0;
-        while ($j < $size)
+        $j = $i + 1;
+        while ($j < count($array))
         {
             if ($array[$j] < $Elem)
             {
@@ -23,6 +23,7 @@ function algoSelection(&$array)
                 $Elem = $array[$iElem];
             }
             $j++;
+            $step++;
         }
         if ($iElem != $i)
         {
@@ -31,8 +32,7 @@ function algoSelection(&$array)
         }
         $i++;
     }
-    echo $i++;
+    echo "nb etape selection: $step ";
     return ($array);
 }
-echo "Selection\n";
 ?>

@@ -8,6 +8,7 @@
 
 function algoInsertion(&$array)
 {
+    $step = 0;
     $i = 0;
     $size = count($array);
     while ($i < $size)
@@ -24,11 +25,11 @@ function algoInsertion(&$array)
             }
             $array[$i] = $cpy;
             $j++;
+            $step++;
         }
         $i++;
     }
-    echo $i;
+    echo "nb etape insertion: $step ";
     return ($array);
 }
-echo "Insertion\n";
 ?>
