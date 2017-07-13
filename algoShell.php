@@ -5,7 +5,7 @@
  * Date: 12/07/2017
  * Time: 13:47
  */
-// fonction algoShell(&$array)
+//function algoShell(&$array)
 //{
 
 //}

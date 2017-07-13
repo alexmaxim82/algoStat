@@ -1,6 +1,4 @@
-!DOCTYPE html>
-<html>
-<body>
+
 
 <?php
 /**
@@ -14,9 +12,14 @@
 require_once('algoInsertion.php');
 require_once('algoSelection.php');
 require_once('algoBubble.php');
+require_once('generate_array.php');
+$chi = 10;
+//echo(genere_random($chi));
+echo "une série en total random";
+echo "\r";
+$my_array = genere_random($chi);
 
-echo "<p>une série en total random</p>";
-$my_array = array(4, 3, 5, 9, 3, 2, 1, 0);
+//$my_array = array(4, 3, 5, 9, 3, 2, 1, 0);
 for ($i = 0; $i < count($my_array); $i++)
     echo $my_array[$i];
 echo "\r";
@@ -30,7 +33,8 @@ $my_sorted_array_data_b = algoBulle($my_array);
 for ($i = 0; $i < count($my_sorted_array_data_b); $i++)
     echo $my_sorted_array_data_b[$i];
 
-echo "<p>une série déjà triée</p>";
+echo "une série déjà triée";
+echo "\r";
 $my_array = array(0, 1, 2, 3, 5, 7, 8, 9);
 for ($i = 0; $i < count($my_array); $i++)
     echo $my_array[$i];

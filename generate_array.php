@@ -5,27 +5,24 @@
  * Date: 10/07/2017
  * Time: 10:56
  */
-require_once('algoBubble.php')
+//require_once('algoBubble.php');
 $ch = 10 ;
-
-
 function genere_random(&$ch){
-    $array = tab;
+    $tab = array();
     for ($i = 0; $i < $ch; $i++) {
-        $tab[$i] = rand();
-        echo ($tab[$i]) . ";";
-    }
+      $tab[$i] = rand();
+      echo ($tab[$i]) . ";";
+  }
 }
 
 
-//echo $_GET['$ch'];
-fonction genere_trie(&$ch){
-$array = tab;
-    for ($i = 0; $i < $ch; $i++) {
-        $tab [$i] = rand();
-        echo (algoBubble($tab[$i])) . ";";
-    }
-}
+//function genere_trie(&$ch){
+//$array = tab;
+  //  for ($i = 0; $i < $ch; $i++) {
+    //    $tab [$i] = rand();
+      //  echo (algoBubble($tab[$i])) . ";";
+    //}
+//}
 
 
 
