@@ -1,5 +1,3 @@
-
-
 <?php
 /**
  * Created by PhpStorm.
@@ -13,12 +11,50 @@ require_once('algoInsertion.php');
 require_once('algoSelection.php');
 require_once('algoBubble.php');
 require_once('generate_array.php');
-$chi = 10;
-//echo(genere_random($chi));
-echo "une série en total random";
-echo "\r";
-$my_array = genere_random($chi);
 
+echo '<br>';
+$chi = isset($_GET['nb']) ? $_GET['nb'] : 10;
+$my_array = genere_random($chi);
+print_r($my_array);
+echo '<br>';
+algoBulle($my_array);
+echo '<br>';
+print_r($my_array);
+echo '<br>';
+
+echo '<br>';
+$chi = isset($_GET['nb']) ? $_GET['nb'] : 10;
+$my_array = genere_random($chi);
+print_r($my_array);
+echo '<br>';
+algoInsertion($my_array);
+echo '<br>';
+print_r($my_array);
+echo '<br>';
+
+echo '<br>';
+$chi = isset($_GET['nb']) ? $_GET['nb'] : 10;
+$my_array = genere_random($chi);
+print_r($my_array);
+echo '<br>';
+algoSelection($my_array);
+echo '<br>';
+print_r($my_array);
+echo '<br>';
+
+die;
+
+
+
+
+
+
+
+
+var_dump($my_array);
+//echo(genere_random($chi));
+echo "<br>une série en total random : <br>";
+echo "<br>la série trier : <br>";
 //$my_array = array(4, 3, 5, 9, 3, 2, 1, 0);
 for ($i = 0; $i < count($my_array); $i++)
     echo $my_array[$i];
@@ -83,11 +119,8 @@ for ($i = 0; $i < count($my_sorted_array_data_b); $i++)
     echo $my_sorted_array_data_b[$i];
 
 
-
-   echo "<p>une moyenne des séries citées ci-dessus</p>";
-   echo ''
-
-
+echo "<p>une moyenne des séries citées ci-dessus</p>";
+echo ''
 
 
 ?>
