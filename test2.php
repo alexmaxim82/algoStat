@@ -7,16 +7,17 @@
  * @param $array
  */
 
+
 require_once('algoInsertion.php');
 require_once('algoSelection.php');
 require_once('algoBubble.php');
 require_once('generate_array.php');
-require_once('algoMerge.php');
-require_once('algoQuicksort.php');
-require_once('algoShell.php');
+//require_once('algoMerge.php');
+//require_once('algoQuicksort.php');
+//require_once('algoShell.php');
 
 echo '<br>';
-$chi = isset($_GET['nb']) ? $_GET['nb'] : 10;
+$chi = isset($_POST['nb']) ? $_POST['nb'] : 10;
 $my_array = genere_random($chi);
 print_r($my_array);
 echo '<br>';
