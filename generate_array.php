@@ -5,41 +5,45 @@
  * Date: 10/07/2017
  * Time: 10:56
  */
-//require_once('algoBubble.php');
-//$ch = 10 ;
-function genere_random($ch = 10, $min = 10, $max = 50)
+
+function genere_random($ch, $min = 10, $max = 50)
 {
     $tab = array();
     for ($i = 0; $i < $ch; $i++) {
         $tab[$i] = mt_rand($min, $max);
-//      echo ($tab[$i]) . ";";
     }
     return $tab;
 }
 
-
-//function genere_trie(&$ch){
-//$tab = array();
-//for ($i = 0; $i < $ch; $i++) {
-//    $tab [$i] = rand();
-//      echo (sort($tab[$i])) . ";";      }
-//}
-//
-//
-//
-//function genere_inverse(&$Ch){
-//    $tab =array();
-//for ($i = 0; $i < $ch;$i++)
-//{
-//    $tab[$i]= rand();
-//    echo (rsort($tab[$i])).";";
-//}
-//}
-
-//fonction generate_qtriee()boucle
+function genere_trie($chi){
+    $chi = isset($_GET['nb']) ? $_GET['nb'] : 10;
+    $my_array = genere_random($chi);
+    sort($my_array);
+    print_r($my_array);
+    echo '<br>';
+}
 
 
-//fonction generate_doublons
+function genere_inverse($chi)
+{
+    $chi = isset($_GET['nb']) ? $_GET['nb'] : 10;
+    $my_array = genere_random($chi);
+    rsort($my_array);
+    print_r($my_array);
+    echo '<br>';
+}
 
-
-//une moyenne des séries citées ci-dessus
+function genere_doublons ($chi)
+{
+    $chi = isset($_GET['nb']) ? $_GET['nb'] : 10;
+    $my_array = genere_random($chi);
+    sort($my_array);
+    for ($x = 0; $x < $chi; $x++) {
+        if ($x % 7 == 0) {
+            $my_array[$x] = mt_rand(10, 50);
+        }
+    }
+    print_r($my_array);
+    echo '<br>';
+}
+?>
